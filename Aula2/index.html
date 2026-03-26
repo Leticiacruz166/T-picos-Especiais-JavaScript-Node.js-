@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Aula 3</title>
+    </head>
+    <script>
+        //Variavel do tipo objeto
+        let pessoa = {
+            nome: "Helton",
+            idade: 72,
+            profissao: "coordenador",
+            salario_mes: 97125.40
+        }
+        console.log("tipo: " + typeof pessoa);
+        console.log("valor: ",  pessoa);
+        console.log("nome: " + pessoa.nome);
+        console.log("salario: " + pessoa.salario_mes);
+
+        pessoa.salario_mes = 97125.40;
+        console.log("salario atualizado ", pessoa.salario_mes);
+
+        let curso = {
+            nome_curso: "ADS",
+            coordenador: pessoa,
+            instituicao: "UP"
+        }
+        console.log(curso);
+
+        //variavel do tipo array
+        let professores = [
+            {nome: "Juliana", materia: "Java", salario: 40231.90},
+            {nome: "João victor", materia: "Algoritimo", salario: 60321.82},
+            {nome: "Thiago Detoni", materia: "Banco de dados", salario: 300450.82}
+        ]
+        console.log("tipo " + typeof profissores);
+        console.log("valor ", professores);
+        console.log("professor 2" ,professores[1]);
+
+        curso.professores = professores;
+        console.log("curso final ", curso);
+        console.log("salario do detoni: ", curso.professores[2].salario);
+
+        //função com nome saudacao
+        let sauda = function saudacao(){
+            console.log("Olá, seja bem vindo!");
+        }
+
+        //saudacao();
+        //console.log("tipo ", typeof saudacao);
+        console.log("tipo de saudacao ", typeof sauda);
+
+
+        function cumprimenta(nome = "Anonimo"){
+            console.log(`Boa noite ${nome}, bem vindo a uma aula top`);
+        }
+
+    cumprimenta("");
+    cumprimenta("Alex");
+
+
+    let fruta = "abacaxi";
+    console.log("tipo: ", typeof fruta);
+    fruta = "maça" + 123;
+    console.log("novo tipo de fruta: ", typeof fruta);
+
+
+    //exemplo de CAST implicito
+    let idade = 22;
+    console.log("tipo: ", typeof idade);
+    idade = 23 + "anos";
+    console.log("novo tipo de idade: ", typeof idade);
+
+    let preco = 45.99;
+    console.log("tipo de preço: ", typeof preco);
+    let precoConvertido = String(preco);
+    console.log("tipo de preço: ", typeof precoConvertido);
+
+    let dia = "Segunda-feira, 23";
+    console.log("tipo de dia: ", typeof dia);
+    diaMes = Number(dia);
+    console.log("tipo de diaMes: ", typeof diaMes);
+    console.log("tipo dia Mes: ", typeof diaMes);
+
+    if ("5" === 5){
+        console.log("É verdadeiro!");
+    }else{
+        console.log("Não é verdadeiro!");
+    }
+
+    const CARRO = "PUNTO";
+
+    if (CARRO === "PUNTO"){
+        console.log("Marca: Fiat");
+    }else if(CARRO === "corsa"){
+        console.log("Marca: GM");
+    }else if(CARRO === "Hillux"){
+        console.log("Marca: Toyota");
+    }else if(CARRO === "Panto"){
+        console.log("Marca: GTA");}
+
+
+
+    for(let i = 1; i < 50; i++){
+        console.log("valor de i: ", i);
+        if(i ===15){
+            continue;
+        }
+        console.log("valor de i:", i);
+
+        if(i ===20){
+            break;
+        }
+    }
+
+    let j = 10;
+    for(;j >= 5; j--){
+        console.log("Valor de j ", j);
+    }
+
+
+    </script>
+    <body>
+        <h3>Aula 3</h3>
+    </body>
+</html>
